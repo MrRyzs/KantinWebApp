@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /KantinWebApp/
+
+# Redirect requests to views
+RewriteRule ^$ views/index.php [L]
+RewriteRule ^index$ views/index.php [L]
+RewriteRule ^login$ views/login.php [L]
+RewriteRule ^cart$ views/cart.php [L]
+RewriteRule ^account$ views/account.php [L]
+RewriteRule ^fetch_menu$ views/fetch_menu.php [L]
+RewriteRule ^fetch_toppings$ views/fetch_toppings.php [L]
+RewriteRule ^add_to_cart$ views/add_to_cart.php [L]
+RewriteRule ^checkout$ views/checkout.php [L]
+
+# Redirect all other requests to views if the file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ views/$1 [L]

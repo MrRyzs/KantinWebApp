@@ -1,0 +1,96 @@
+.btn-menu{
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        background-color: rgb(25, 32, 255);
+        color: #fff;
+        padding: 10px;
+    }
+
+    label{
+        margin: 0 10px;
+        font-weight: 600;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        display: inline-flex;
+        float: left;
+        max-width: 35vw;
+    }
+
+    .bdy {
+        display: inline-flex;
+        float: right;
+        max-width: 50vw;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(25, 32, 255);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer nav ul li {
+        margin: 10px 30px;
+    }
+
+    .footer nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .footer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #00aaaa;
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .footer nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .footer nav ul li {
+        margin: 10px 0;
+    }
+
+    .footer nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .content {
+        margin-left: 220px; /* Adjust based on the width of the sidebar */
+        padding: 20px;
+    }
+}
